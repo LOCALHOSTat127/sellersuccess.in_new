@@ -4,6 +4,8 @@ import HeroSection from "@/Components/HeroSection/HeroSection";
 import AboutPoints from "@/Components/AboutPoints/AboutPoints";
 import ServicesGridCards from "@/Components/ServicesGridCards/ServicesGridCards";
 import Aboutus from "@/Components/AboutUs/Aboutus";
+import Registrations from "@/Components/Registrations/Registrations";
+import WebDev from "@/Components/WebDev/WebDev";
 export default function Home() {
   return (
     <section className="home_page_main">
@@ -12,6 +14,8 @@ export default function Home() {
       <AboutPoints/>
       <ServicesGridCards/>
       <Aboutus/>
+      <Registrations/>
+      <WebDev/>
     </section>
   );
 }
