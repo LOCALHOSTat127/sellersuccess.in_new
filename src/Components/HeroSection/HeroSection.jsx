@@ -7,7 +7,8 @@ import HeroImage from "../../../public/assets/svg/hero_image.svg";
 const HeroSection = () => {
   return (
    <section className="herosection">
-        <div className="left">
+       <div className="wrapper">
+       <div className="left">
             <span className="heading">
             <h1>
             <span>Simplify your</span><br/> Taxation & <br/>Compliance.</h1>
@@ -43,6 +44,7 @@ const HeroSection = () => {
             src={HeroImage}
             />
         </div>
+       </div>
    </section>
   )
 }

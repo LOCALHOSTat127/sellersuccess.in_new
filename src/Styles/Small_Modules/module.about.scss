@@ -1,87 +1,94 @@
 @import '../color_n_typography';
 .about_us{
-    margin: 120px 0px 120px 0px;
+    
     background-image:linear-gradient(rgb(20 15 242 / 3%) 20%, #fcfdff);
-    padding: 80px 40px;
-    display: flex;
-    flex-direction: column;
-    gap: 80px;
-    .text_area{
+   
+
+    .wrapper{
+        max-width: 1424px;
+        margin: 120px auto 120px auto;
+        padding: 80px 40px;
         display: flex;
         flex-direction: column;
-        align-items: center;
-        gap:18px;
-        h5{
-            font-weight: $fw-bold;
-            font-size: 2.5rem;
-            color: rgba(0, 0, 0, 0.83);
-        }
-        p{
-            font-size: 1.2rem;
-            text-align: center;
-            max-width: 70%;
-            line-height: normal;
-        }
-    }
-
-    .points{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-      
-        .point{
-            padding: 24px 34px;
+        gap: 80px;
+        .text_area{
             display: flex;
-            color: rgb(49, 48, 48);
             flex-direction: column;
-            gap: 42px;
-            justify-content: space-between;
-            align-items: flex-start;
-            position: relative;
-            &::before{
-                content: "";
-                position: absolute;
-                right: 0;
-                top: 0;
-                width: 1px;
-                height: 100%;
-                background-color: #B5A3A3;
+            align-items: center;
+            gap:18px;
+            h5{
+                font-weight: $fw-bold;
+                font-size: 2.5rem;
+                color: rgba(0, 0, 0, 0.83);
             }
-            &::after{
-                content: "";
-                position: absolute;
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 1px;
-                background-color: #B5A3A3;
-            }
-
-            &.nlh{
-                &::after{
-                    display: none;
-                }
-            }
-            &.nlv{
-                &::before{
-                    display: none;
-                }
-            }
-            .desc{
-                color: black;
-                max-width: 90%;
-                text-align: justify;
+            p{
+                font-size: 1.2rem;
+                text-align: center;
+                max-width: 70%;
                 line-height: normal;
             }
-            span{
+        }
+    
+        .points{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+          
+            .point{
+                padding: 24px 34px;
                 display: flex;
-                align-items: center;
-                gap: 12px;
-                p{
-                    font-size: 1.2rem;
-                    font-weight: $fw-semibold;
+                color: rgb(49, 48, 48);
+                flex-direction: column;
+                gap: 42px;
+                justify-content: space-between;
+                align-items: flex-start;
+                position: relative;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    width: 1px;
+                    height: 100%;
+                    background-color: #B5A3A3;
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background-color: #B5A3A3;
+                }
+    
+                &.nlh{
+                    &::after{
+                        display: none;
+                    }
+                }
+                &.nlv{
+                    &::before{
+                        display: none;
+                    }
+                }
+                .desc{
+                    color: black;
+                    max-width: 90%;
+                    text-align: justify;
+                    line-height: normal;
+                }
+                span{
+                    display: flex;
+                    align-items: center;
+                    gap: 12px;
+                    p{
+                        font-size: 1.2rem;
+                        font-weight: $fw-semibold;
+                    }
                 }
             }
         }
     }
+   
 }

@@ -2,13 +2,13 @@
 
 
 .services_grid{
+
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 44px;
-    margin-top: 150px;
-    margin-bottom: 80px;
-
+    max-width: 1424px;
+    margin: 150px auto 80px auto;
 
     .text_section{
         display: flex;

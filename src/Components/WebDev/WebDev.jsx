@@ -15,6 +15,7 @@ const Logos = [CloudLogo,MongoLogo,NodeLogo,CloudLogo,MongoLogo];
 const WebDev = () => {
   return (
     <section className="website_dev_service">
+        <div className="wrapper">
         <h4 className="main_text">
         Get a profession website design for <br/>you Business.
         </h4>
@@ -71,6 +72,7 @@ const WebDev = () => {
                     ))
                 }
             </div>
+        </div>
         </div>
     </section>
   )

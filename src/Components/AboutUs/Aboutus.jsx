@@ -12,7 +12,8 @@ import "../../Styles/Small_Modules/module.about.scss";
 const Aboutus = () => {
   return (
     <section className="about_us">
-        <div className="text_area">
+       <div className="wrapper">
+       <div className="text_area">
             <h5>Why choose sellersuccess over anybody?</h5>
             <p>
             Expertise, personalized service, comprehensive solutions, and exceptional support. Trust us for peace of mind and value for money.
@@ -92,6 +93,7 @@ const Aboutus = () => {
                 </span>
             </div>  
         </div>
+       </div>
     </section>
   )
 }
