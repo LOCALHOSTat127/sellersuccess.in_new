@@ -9,20 +9,22 @@ import WebDev from "@/Components/WebDev/WebDev";
 import Blogs from "@/Components/Blogs/Blogs";
 import Faq from "@/Components/Faq/Faq";
 import Reviews from "@/Components/Reviews/Reviews";
+import Footer from "@/Components/Footer/Footer";
 
 export default function Home() {
   return (
     <section className="home_page_main">
       <Header/>
       <HeroSection/>
-       <AboutPoints/>
-     <ServicesGridCards/>
+      <AboutPoints/>
+      <ServicesGridCards/>
       <Aboutus/>
       <Registrations/>
-       <WebDev/>
-     <Blogs/>
-      <Faq/> 
+      <WebDev/>
+      <Blogs/>
       <Reviews/>
+      <Faq/> 
+      <Footer/>
     </section>
   );
 }
