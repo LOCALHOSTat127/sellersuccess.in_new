@@ -14,17 +14,16 @@ import Footer from "@/Components/Footer/Footer";
 export default function Home() {
   return (
     <section className="home_page_main">
-      <Header/>
       <HeroSection/>
       <AboutPoints/>
       <ServicesGridCards/>
       <Aboutus/>
       <Registrations/>
       <WebDev/>
+      <Registrations/>
       <Blogs/>
       <Reviews/>
       <Faq/> 
-      <Footer/>
     </section>
   );
 }

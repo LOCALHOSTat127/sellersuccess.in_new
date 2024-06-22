@@ -39,7 +39,7 @@ const socialMediaIcons = [
 const Header = () => {
       const [show, setShow] = useState(false)
       const controlNavbar = () => {
-          if (window.scrollY >= 250 ) {
+          if (window.scrollY >= 10 ) {
               setShow(true)
           }else{
             setShow(false)
