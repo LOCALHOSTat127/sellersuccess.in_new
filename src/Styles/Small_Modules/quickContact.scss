@@ -6,49 +6,53 @@
     // top: 50px;
     width: 100%;
     padding: 40px 0px;
+  
     position: relative;
-    background-image: url("../../../public/assets/Images/bg_bul.jpg");
-    &::before{
-        content: "";
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(to top, rgba(17, 17, 17, 0.982), rgb(0 0 0 / 35%));
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
-        background-attachment: fixed;
-    }
-
-
+            background-image: url("../../../public/assets/Images/bul_img_6.jpg");
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to top, rgba(17, 17, 17, 0.982), rgb(0 0 0 / 35%));
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+                background-attachment: fixed;
+            }
+           
     .wrapper{
       
         max-width: 1424px;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 0.65fr 0.35fr;   
-    
+        
       
         gap: 30px;
         transition: all 150ms ease-in-out;
      
 
         .right{
-            z-index: 20;
-            padding: 40px 0px 40px 0px;
+           
+            background-color: #ababab5e;
+            border-radius: 16px;
+            overflow: hidden;
+            padding: 40px 40px;
             display: flex;
             flex-direction: column;
             gap: 30px;
             .page_title{
-                font-size: 2rem;
+                z-index: 20;
                 font-weight: $fw-bold;
-                color:white;
-                line-height: normal;
+                font-size: 3.8rem;
+                color: rgb(255, 255, 255);
             }
 
             .page_description{
+                z-index: 20;
                 max-width: 85%;
                 line-height: normal;
                 font-size: 1rem;
@@ -57,6 +61,7 @@
             }
 
             .fancy_steps{
+                z-index: 20;
                 // background-color: pink;
                 display: flex;
                 align-items: center;
@@ -107,10 +112,9 @@
             }
         }
 
-        .left{
+        .left{ 
             position: relative;
             z-index: 20;
-            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
             background-color: #FAFFFC;
             padding: 40px 40px;
             display: flex;
@@ -149,7 +153,7 @@
                     gap: 8px;
                     padding: 12px 6px;
                     font-weight: 600;
-
+                 
                   
                 }
                 

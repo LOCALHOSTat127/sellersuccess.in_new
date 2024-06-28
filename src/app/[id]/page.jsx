@@ -2,7 +2,7 @@ import "../../Styles/Pages_Styles/dynamic_page.scss";
 import QuickContact from '@/Components/DynamycPageComponents/QuickContact';
 import PageTextArea from "@/Components/DynamycPageComponents/PageTextArea";
 import TwoColBox from "@/Components/DynamycPageComponents/TwoColBox";
-
+import GirdBoxes from "@/Components/DynamycPageComponents/GirdBoxes";
 // export async function getPageData(pageID) {
 //   // Fetch data based on the slug parameter
 //   const filePath = path.join(process.cwd(), 'data', 'pages', `${pageID}.json`);
@@ -20,6 +20,7 @@ const DynamicStaticPage = async ({params }) => {
       <QuickContact isShort={false}/>
       <PageTextArea/>
       <TwoColBox />
+      <GirdBoxes/>
     </div>
   );
 }

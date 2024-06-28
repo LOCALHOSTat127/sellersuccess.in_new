@@ -1,21 +1,25 @@
 @import "../color_n_typography";
 
 .column_{
-    max-width: 1424px;
-    margin: 0px auto 50px auto;
     .wapper{
-
-        max-width: 1024px;
+        max-width: 1224px;
+        margin: 0px auto 100px auto;
         display: flex;
-        flex-direction: column;
-        background-color: #E5F3FF;
+        flex-direction: row;
+        background-color: #edf6fe;
         border-radius: 16px;
         gap: 20px;
       
         .container{
             position: relative;
             &.left{
-                border-bottom: 1px dashed #7070707a;
+                // box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+                border: 1px dashed #7070707a;
+                outline: none;
+                overflow: hidden;
+                border-radius: 16px;
+                background-color: #efefef;
             }
             padding: 40px 40px;
             display: flex;

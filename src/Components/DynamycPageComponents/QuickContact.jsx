@@ -7,11 +7,21 @@ import SmTick from "../../../public/assets/svg/sm_tick.svg";
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
 import PhoneIcon from '@mui/icons-material/Phone';
+import EmailIcon from '@mui/icons-material/Email';
 import Button from '@mui/material/Button';
 
 import SendIcon from '@mui/icons-material/Send';
-import CircularProgress from '@mui/material/CircularProgress';
+
 import LinearProgress from '@mui/material/LinearProgress';
+
+
+import Alert from '@mui/material/Alert';
+import CheckIcon from '@mui/icons-material/Check';
+
+
+
+
+
 const QuickContact = ({isShort}) => {
   const [isSubmitting,setSubmitting] = useState(false);
 
@@ -32,10 +42,10 @@ const QuickContact = ({isShort}) => {
       }}
       className="right">
       <h1 className="page_title">
-      Service that exceeds expectations.
+      Let's connect.
       </h1>
       <p className="page_description">
-      A Private Limited Company offers limited liability and legal protection to its shareholders. A Private Limited Company in India lies somewhere between a partnership firm and a widely owned public company. It can be registered with a minimum of two people. A person can be both a director and shareholder in a Private Limited Company.
+      Our services are designed to provide comprehensive solutions tailored to meet the unique needs of your business. Whether you're looking to start a new venture, streamline your operations, or expand your reach, our expert team is here to support you every step of the way. We are committed to delivering excellence and helping you achieve your business goals efficiently and effectively.
       </p>
       <div className="fancy_steps">
         <div className="step">
@@ -73,10 +83,11 @@ const QuickContact = ({isShort}) => {
           <p>Registration Completed</p>
          </span>
         </div>
-        
+          
       </div>
       
       </div>
+      
       <div 
       style={{
         maxWidth :  `${isShort === true ? '400px' : null}`
@@ -105,7 +116,7 @@ const QuickContact = ({isShort}) => {
         <div className="flex">
         <TextField
           disabled={isSubmitting && true}
-        id="outlined-basic" label="Full Name" variant="outlined" />
+        id="outlined-basic" label="First Name" variant="outlined" />
         <TextField 
           disabled={isSubmitting && true}
         id="outlined-basic" label="Last Name" variant="outlined" />
@@ -127,6 +138,7 @@ const QuickContact = ({isShort}) => {
         type="tel" // Ensures numeric keyboard on mobile
         placeholder="Enter your mobile number"
       />
+      
       <Button
       TouchRippleProps={false}
       disableElevation
