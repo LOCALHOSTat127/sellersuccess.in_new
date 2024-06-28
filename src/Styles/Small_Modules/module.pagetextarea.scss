@@ -1,0 +1,100 @@
+@import "../color_n_typography";
+
+.page_area{
+    .wapper{
+        max-width: 1384px;
+        margin: 100px auto 50px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        .meta_text{
+            margin-bottom: 36px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+            .page_main_title{
+                position: relative;
+                padding-left: 16px;
+                &::after{
+                    content: "";
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 4px;
+                    height: 100%;
+                    background-color: #4636FF;
+                }
+                font-size: 2rem;
+                font-weight: $fw-semibold;
+            }
+
+            .info{
+                display: flex;
+                align-items: center;
+                gap: 40px;
+                span{
+                    display: flex;
+                    gap: 10px;
+                    align-items: center;
+                    img{
+                        width: 14px;
+                        height: 14px;
+                    }
+                    p{
+                        
+                        font-size: 0.85rem;
+                    }
+                }
+            }
+        }
+
+        .page_main_description{
+            line-height: normal;
+            font-weight: 300;
+            max-width: 1024px;
+            margin-bottom: 40px;
+        }
+
+        #page_image{
+            width: 100%;
+            max-width: 1024px;
+            height: auto;
+            border-radius: 16px;
+        }
+
+
+        // Dynamic content HTML (Server Generated)
+        .dynamic_html_fluyed{
+        
+            .list_container{
+                margin: 60px 0px;
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+                max-width: 1024px;
+                p{
+                    text-decoration: underline;
+                    font-weight: 600;
+                    font-size: 1.1rem;
+                    text-transform: capitalize;
+                }
+                ul{
+                    padding-left: 34px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 18px;
+                    li{
+                        line-height: normal;
+                        span{
+                            display: inline;
+                            font-weight: 500;
+                            padding-right: 6px;
+                        }
+                        font-weight: 300;
+                        list-style-type: disc;
+                    }
+                }
+            }
+        }
+    }
+}

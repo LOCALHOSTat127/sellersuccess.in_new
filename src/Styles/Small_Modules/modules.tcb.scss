@@ -1,0 +1,48 @@
+@import "../color_n_typography";
+
+.column_{
+    max-width: 1424px;
+    margin: 0px auto 50px auto;
+    .wapper{
+
+        max-width: 1024px;
+        display: flex;
+        flex-direction: column;
+        background-color: #E5F3FF;
+        border-radius: 16px;
+        gap: 20px;
+      
+        .container{
+            position: relative;
+            &.left{
+                border-bottom: 1px dashed #7070707a;
+            }
+            padding: 40px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+           
+            p{
+                font-weight: 600;
+                font-size: 1.1rem;
+                text-transform: capitalize;
+            }
+            ul{
+                padding-left: 34px;
+                display: flex;
+                flex-direction: column;
+                gap: 18px;
+                li{
+                    line-height: normal;
+                    span{
+                        display: inline;
+                        font-weight: 500;
+                        padding-right: 6px;
+                    }
+                    font-weight: 300;
+                    list-style-type: disc;
+                }
+            }
+        }
+    }
+}

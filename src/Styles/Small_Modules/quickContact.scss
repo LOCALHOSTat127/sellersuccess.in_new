@@ -1,0 +1,164 @@
+@import '../color_n_typography';
+
+.quick__contact{
+    // position: fixed;
+    // right: 10px;
+    // top: 50px;
+    width: 100%;
+    padding: 40px 0px;
+    position: relative;
+    background-image: url("../../../public/assets/Images/bg_bul.jpg");
+    &::before{
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to top, rgba(17, 17, 17, 0.982), rgb(0 0 0 / 35%));
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        background-attachment: fixed;
+    }
+
+
+    .wrapper{
+      
+        max-width: 1424px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 0.65fr 0.35fr;   
+    
+      
+        gap: 30px;
+        transition: all 150ms ease-in-out;
+     
+
+        .right{
+            z-index: 20;
+            padding: 40px 0px 40px 0px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            .page_title{
+                font-size: 2rem;
+                font-weight: $fw-bold;
+                color:white;
+                line-height: normal;
+            }
+
+            .page_description{
+                max-width: 85%;
+                line-height: normal;
+                font-size: 1rem;
+                color: rgb(223, 223, 223);
+                font-weight: 300;
+            }
+
+            .fancy_steps{
+                // background-color: pink;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding-top: 34px;
+                .step{
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    justify-content: space-between;
+                    span{
+                        color: white;
+                        gap: 18px;
+                        display: flex;
+                        align-items: center;
+                        p{
+                            font-weight: 300;
+                            font-size: 0.95rem;
+                        }
+                        div{
+                            min-width: 16px;
+                            min-height: 16px;
+                            border-radius: 50%;
+                            background-color: #86F09D;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            padding: 2px;
+                            border: 0.1px solid black;
+                            img{
+                                width: 14px;
+                                height: 14px;
+                            }
+                        }
+                    }
+                   
+                    .dash_line{
+                        width: 100%;
+                        border-radius: 0px;
+                        height: 2px;
+                        border-top: 1.5px dashed #4CAF50;
+                    }
+
+                  
+                    
+                }
+            }
+        }
+
+        .left{
+            position: relative;
+            z-index: 20;
+            box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+            background-color: #FAFFFC;
+            padding: 40px 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 34px;
+            border-radius: 16px;
+            overflow: hidden;
+            span{
+               
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .t{
+                    font-size: 1.2rem;
+                    font-weight: $fw-semibold;
+                }
+                p{
+                    font-weight: $fw-regular;
+                }
+            }
+
+            .contact_form{
+               
+                display: flex;
+                flex-direction: column;
+                gap: 34px;
+                .flex{
+                    
+                    display: flex;
+                    gap: 12px;
+                }
+
+                #submit_cb{
+                    background-color: #403CF6;
+                    display: flex;
+                    gap: 8px;
+                    padding: 12px 6px;
+                    font-weight: 600;
+
+                  
+                }
+                
+
+                #phone_number{
+                    width: 100%;
+
+                }
+            }
+        }
+    }
+}

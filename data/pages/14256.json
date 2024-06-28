@@ -1,0 +1,11 @@
+{
+    "title": "Page 1",
+    "content": "<h1 style='color:red;font-size:50px;' >This is the content for Page 1.</h1>",
+    "img" : "/assets/Images/page_img.png",
+    "settings": {
+      "useHeader": true,
+      "isBlogs": true,
+      "useSidebar": false
+    }
+  }
+  

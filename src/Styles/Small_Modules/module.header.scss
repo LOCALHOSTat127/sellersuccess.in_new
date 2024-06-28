@@ -13,7 +13,7 @@
     display: flex;
     flex-direction: column;
  
-    z-index: 10000;
+    z-index: 5000;
 
     &.hide{
         max-width : 100%;
@@ -23,18 +23,23 @@
         align-items:  center;
         justify-content: center;
         .upper_navbar{
-            display: none;
-        }
+        position: fixed;
+        top: 0;
+        z-index: 5000;
+
+        }   
         .lower_navbar{
-            justify-self: center;
-            max-width: 1424px;
-            width: 100%;
+            background-color: white;
+            z-index: 50000;
+           justify-self: center;
+           max-width: 1424px;
+           width: 100%;
+         
         }
       
     }
 
     .upper_navbar{
-      
         padding: 15px 18px;
         display: flex;
         align-items: center;
@@ -60,7 +65,7 @@
 
 
     .lower_navbar{
-        transition: all 250ms ease-in-out;
+    
         padding: 15px 18px;
         display: flex;
         align-items: center;
