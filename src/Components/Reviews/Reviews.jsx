@@ -29,36 +29,7 @@ const REVIEWS = [
         review : "I am glad to have taken the Payroll & Accounting Service at Sellersuccess.in they provide best and affordable service.",
         stars : 4.5,
     },
-    {
-        customer_img : 'assets/Images/review_girl.png',
-        custmer_name : "Jenny Phillip",
-        review : "I am glad to have taken the Payroll & Accounting Service at Sellersuccess.in they provide best and affordable service.",
-        stars : 4.5,
-    },
-    {
-        customer_img : 'assets/Images/review_girl.png',
-        custmer_name : "Jenny Phillip",
-        review : "I am glad to have taken the Payroll & Accounting Service at Sellersuccess.in they provide best and affordable service.",
-        stars : 4.5,
-    },
-    {
-        customer_img : 'assets/Images/review_girl.png',
-        custmer_name : "Jenny Phillip",
-        review : "I am glad to have taken the Payroll & Accounting Service at Sellersuccess.in they provide best and affordable service.",
-        stars : 4.5,
-    },
-    {
-        customer_img : 'assets/Images/review_girl.png',
-        custmer_name : "Jenny Phillip",
-        review : "I am glad to have taken the Payroll & Accounting Service at Sellersuccess.in they provide best and affordable service.",
-        stars : 4.5,
-    },
-    {
-        customer_img : 'assets/Images/review_girl.png',
-        custmer_name : "Jenny Phillip",
-        review : "I am glad to have taken the Payroll & Accounting Service at Sellersuccess.in they provide best and affordable service.",
-        stars : 4.5,
-    }
+    
 ]
 const Reviews = () => {
     const sliderRef = useRef(null);

@@ -1,0 +1,197 @@
+@import "../color_n_typography";
+
+.prices_{
+    width: 100%;
+    .wrapper{
+        max-width: 1324px;
+        margin: 120px auto 80px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 140px;
+        .text_area{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 18px;
+        
+            h6 {
+                font-weight: $fw-bold;
+                font-size: 2rem;
+                color: rgb(77, 77, 77);
+            }
+        
+            p {
+                font-size: 1.2rem;
+                line-height: normal;
+            }
+        }
+
+        .price_cards{
+    
+            padding: 10px 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            gap: 54px;
+
+            .card{
+                height: fit-content;
+                overflow: hidden;
+                background-color: #FDFDFD;
+                border: 1px solid #A6A6A6;
+                border-radius: 16px;
+                padding: 0px;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: 0.30fr auto 0.10fr;
+                cursor: pointer;
+                transition: all 150ms ease-in-out;
+            
+
+                .card_price_info{
+                 
+                    
+                    border-bottom: 1px solid #EEDFDF;
+                    padding: 34px 34px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    .tag{
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        padding: 10px 16px;
+                        border-radius: 8px;
+                        width: fit-content;
+                        background-image: linear-gradient(#6E6BF3,#2A26ED);
+                        .dot{
+                            width: 7px;
+                            height: 7px;
+                            background-color: white;
+                            border-radius: 50%;
+                        }
+
+                        p{
+                            font-weight: $fw-semibold;
+                            color: white;
+                        }
+                    }
+
+                    .pricing_section{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+
+                        .pricing_upper{
+                            display: flex;
+                            align-items: flex-start;
+                            gap: 8px;
+                            .original_pricing{
+                                color: #7E7E7E;
+                                text-decoration: line-through;
+                                font-size: 1.3rem;
+                            }
+                            .dis_percent{
+                                color: #12801D;
+                                font-weight: 400;
+                                font-size: 0.75rem;
+                            }
+                        }
+
+                        .pricing_lower{
+                            display: flex;
+                            gap: 4px;
+                            align-items: center;
+                            font-weight: $fw-bold;
+                            font-size: 2.4rem;
+                            .symbol{
+                                  color: rgba(0, 0, 0, 0.516);
+                            }
+                        }
+                        .info{
+                            font-size: 0.85rem;
+                            color: rgba(0, 0, 0, 0.568);
+                        }
+
+                    }
+                }
+
+                &:hover{
+                    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+                    .features{
+                        max-height: 100%;
+                    }
+                }
+                .features{
+                    max-height: 200px;
+                    overflow: hidden;
+                    transition: all 50ms ease-in-out;
+                    
+
+                   
+                    padding: 34px 34px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 20px;
+                    p{
+                        font-weight: bold;
+                        color: black;
+                    }
+                    ul{
+                        padding-left: 12px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 24px;
+                        li{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            div{
+                                width: 18px;
+                                height: 18px    ;
+                                border-radius: 50%;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                background-color: #86F09D;
+                                border:1px solid black;
+
+                                img{
+                                    width: 12px;
+                                    height: auto;
+                                }
+                            }
+                        }
+                    }
+                   
+                }
+
+               
+                .cta_{
+                   
+                   cursor: pointer;
+                    border-top: 1px solid #EEDFDF;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 24px;
+                    padding: 20px 34px;
+                    transition: all 150ms ease-in-out;
+                    &:hover{
+                        background-color: #3a3a3a;
+                        color: white;
+                    }
+                   
+                    
+                }
+                &:nth-child(2){
+                   
+                    background-color: #FAFFFC;
+                    transform: translateY(-60px);
+                }
+            }
+
+            
+        }
+    }
+}

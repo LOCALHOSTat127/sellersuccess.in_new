@@ -2,11 +2,9 @@
 import { useState,useRef } from "react";
 import "../../Styles/Small_Modules/module.blogs.scss";
 import Image from "next/image";
-import ArrowDown from "../../../public/assets/svg/arrow_right_blue_sm.svg";
 import ClockIcon from "../../../public/assets/svg/calender_sm_grey.svg";
 import  DateIcon from "../../../public/assets/svg/clock_sm_grey.svg";
 
-import blogImage from "../../../public/assets/Images/blog_image.png";
 
 
 

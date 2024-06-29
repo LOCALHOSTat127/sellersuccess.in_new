@@ -9,7 +9,7 @@ import Steps from "@/Components/DynamycPageComponents/Steps";
 import Faq from "@/Components/Faq/Faq";
 import Reviews from "@/Components/Reviews/Reviews";
 import Blogs from "@/Components/Blogs/Blogs";
-
+import Pricing from "@/Components/DynamycPageComponents/Pricing";
 
 
 
@@ -85,6 +85,46 @@ const TEXT_CONFIG = {
   ]
 }
 
+const FAQS = {
+    left : [
+      {
+          question : "Can a Private Limited Company convert to another business structure?",
+          answer : "Yes, a Private Limited Company can be converted into another business structure such as a Public Limited Company, Limited Liability Partnership (LLP), or sole proprietorship, subject to compliance with legal procedures and regulatory requirements."
+      },
+      {
+          question : "How can I dissolve a Private Limited Company?",
+          answer : "The process for dissolving a Private Limited Company typically involves passing a special resolution, settling outstanding liabilities, and filing dissolution documents with the Registrar of Companies."
+      },
+      {
+          question : "How long does it take to register a Private Limited Company?",
+          answer : "The registration process can vary depending on factors such as the jurisdiction and completeness of documentation. Generally, it can take 10-12 working days"
+      },
+      {
+          question : "How many members are required to form a Private Limited Company?",
+          answer : "A Private Limited Company must have a minimum of two members (shareholders) and can have a maximum of 200 members."
+      }
+  ],
+  right : [
+      {
+          question : "What is the minimum capital requirement for a Private Limited Company?",
+          answer : "There is no fixed minimum capital requirement for a Private Limited Company in many jurisdictions. The capital can be as low as one rupee or its equivalent."
+      },
+      {
+          question : "What are the ongoing compliance requirements for a Private Limited Company?",
+          answer : "Ongoing compliance requirements include holding annual general meetings, maintaining statutory registers, filing annual returns, complying with tax laws, and adhering to other regulatory requirements."
+      },
+      {
+          question : "Can a Private Limited Company be converted into another business structure?",
+          answer : "Yes, a Private Limited Company can be converted into another business structure such as a Public Limited Company, Limited Liability Partnership (LLP), or sole proprietorship, subject to compliance with legal procedures and regulatory requirements."
+      },
+      {
+          question : "Can a Foreign National or an NRI be a Director of a Private Limited Company?",
+          answer : "Yes, a Foreign National or an NRI can become a Director of a Private Limited Company in India after obtaining Director Identification Number (DIN). However, it may be noted that at least one Director on the Board of Directors must be a Resident India."
+      },
+      
+  ]
+}
+
 
 const DynamicStaticPage = async ({params }) => {
   return (  
@@ -93,12 +133,13 @@ const DynamicStaticPage = async ({params }) => {
       <PageTextArea/>
       <TwoColBox />
       <GirdBoxes/>
+      <GridPoints TEXT_CONFIG={TEXT_CONFIG}/>
       <Documents/>
       <Steps/>
-      <GridPoints TEXT_CONFIG={TEXT_CONFIG}/>
-      <Faq/>
+      <Pricing/>
+      <Faq faqs={FAQS}/>
+      <Blogs/>
       <Reviews/>
-      <Blogs/>    
     </div>
   );
 }

@@ -2,7 +2,7 @@
 
 .faqs_section {
     max-width: 1324px;
-    margin: 120px auto 120px auto;
+    margin: 150px auto 80px auto;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -29,7 +29,6 @@
     .faqs {
         padding: 12px;
         width: 100%;
-        max-width: 1324px;
         display: grid;
         grid-template-columns: repeat(2, 1fr); /* Adjust according to GRID_CONFIG.col */
         gap: 34px; /* Adjust according to GRID_CONFIG.gap */
@@ -68,8 +67,9 @@
                 h2 {
                     color: rgba(0, 0, 0, 0.861);
                     font-weight: $fw-semibold;
-                    font-size: 1.2rem;
+                    font-size: 1.1rem;
                     line-height: normal;
+                    max-width: 90%;
                 }
             }
 
