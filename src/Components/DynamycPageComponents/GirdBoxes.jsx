@@ -1,4 +1,4 @@
-import Image from "next/image"
+
 import "../../Styles/Small_Modules/modules_gridbox.scss";
 
 
@@ -67,7 +67,7 @@ const GirdBoxes = () => {
     <section className="grid_">
         <div className="wrapper">
             <div className="text_section">
-                        <h4>Compliance Required For Partnership Firm</h4>
+                        <h5>Compliance Required For Partnership Firm</h5>
                         <p>There are plenty of compliance which are required to be fulfilled by an Partnership firm.</p>
             </div>
             <div 

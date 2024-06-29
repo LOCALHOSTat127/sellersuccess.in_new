@@ -7,16 +7,11 @@ import SmTick from "../../../public/assets/svg/sm_tick.svg";
 import TextField from '@mui/material/TextField';
 import InputAdornment from '@mui/material/InputAdornment';
 import PhoneIcon from '@mui/icons-material/Phone';
-import EmailIcon from '@mui/icons-material/Email';
+
 import Button from '@mui/material/Button';
-
 import SendIcon from '@mui/icons-material/Send';
-
 import LinearProgress from '@mui/material/LinearProgress';
 
-
-import Alert from '@mui/material/Alert';
-import CheckIcon from '@mui/icons-material/Check';
 
 
 
