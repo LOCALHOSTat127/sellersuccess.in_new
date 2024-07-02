@@ -2,11 +2,11 @@
 
 
 .services_grid{
-
+    .wrapper{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    gap: 44px;
+    gap: 70px;
     max-width: 1424px;
     margin: 150px auto 80px auto;
 
@@ -179,4 +179,7 @@
             grid-row: 2/3;
         }
     }
+    }
+
+   
 }

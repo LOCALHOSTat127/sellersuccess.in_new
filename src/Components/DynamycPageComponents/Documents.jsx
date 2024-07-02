@@ -30,7 +30,7 @@ const DOCUMENTS_TYPES = [
     "Limited Libility Partnership"
 ]
 
-const Documents = () => {
+const Documents = ({CONFIG}) => {
     const [DocType,SetDocType] = useState('');
 
     const [isSubmitting,setSubmitting] = useState(false);
@@ -65,7 +65,7 @@ const Documents = () => {
             </span>
             <ul className="documents">
                 {
-                DOCUMENTS_LIST.map((doc,index) =>(
+                CONFIG.list.map((doc,index) =>(
                     <li key={index}>{doc}</li>
                 )) 
                 }

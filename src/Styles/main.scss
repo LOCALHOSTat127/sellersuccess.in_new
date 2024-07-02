@@ -2,3 +2,24 @@
 @import './reset';
 @import './color_n_typography';
 @import './mixins';
+
+.css-4t3x6l-MuiPaper-root-MuiDrawer-paper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: red;
+    border-radius: "40px"
+}
+
+.call_to_actions{
+             
+ 
+    .cta_btn{
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+        
+    }
+   
+}

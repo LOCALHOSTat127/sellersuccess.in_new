@@ -3,27 +3,26 @@ import "../../Styles/Small_Modules/module.about.scss";
 
 
 
-const GridPoints = ({TEXT_CONFIG}) => {
+const GridPoints = ({CONFIG}) => {
+    
   return (
     <section className="about_us" 
-    style={{
-        background : `${TEXT_CONFIG.isBG === false ? 'white' : null}`
-    }}
+  
     >
        <div className="wrapper">
        <div className="text_area">
             <h5> 
-                {TEXT_CONFIG.head}
+                {CONFIG.head}
             </h5>
             <p>
-                {TEXT_CONFIG.subhead}
+                {CONFIG.sub_head}
             </p>
         </div>
         <div className="points">
             {
-                TEXT_CONFIG.points.map((point,index) =>(
+                CONFIG.list.map((point,index) =>(
                     <div 
-                    className={`point ${point.index % 3 === 0 ? "nlv" : null} ${index   >= (TEXT_CONFIG.points.length -  ((TEXT_CONFIG.points.length % 3 ) || 3)) ? "nlh" : ""}`} 
+                    className={`point ${point.index % 3 === 0 ? "nlv" : null} ${index   >= (CONFIG.list.length -  ((CONFIG.list.length % 3 ) || 3)) ? "nlh" : ""}`} 
                     id={index}
                     key={index}>
                         <p className="desc">

@@ -17,7 +17,7 @@ const STEPS = [
         sub : "We will draft the MOA (Memorandum of association) and AOA (Articles of association). We will file the incorporation documents with MCA through in part B of a form called “SPICe Plus (SPICe +)” along with the subscription statement. Usually, MCA approves the forms within 4-5 days once filed and issues Incorporation Certificate with CIN. PAN & TAN are allotted alongside. You may then proceed to open your Company Bank Account."
     }
 ]
-const Steps = () => {
+const Steps = ({CONFIG}) => {
     const handleActive = (e) =>{
         const steps = document.getElementById('steps').children;
 
@@ -39,7 +39,7 @@ const Steps = () => {
             </span>
             <div className="steps" id="steps">
                 {
-                    STEPS.map((step,index) =>(
+                    CONFIG.list.map((step,index) =>(
                         <div 
                  
                         key={index} 
@@ -52,10 +52,10 @@ const Steps = () => {
                                 onClick={handleActive}
                                 className="overlay"></div>
                                 <p>Step {index+1}</p>
-                                <p className="step_name">{step.head}</p>
+                                <p className="step_name">{step.title}</p>
                             </div>
                             <div className="step_desc">
-                                {step.sub}
+                                {step.description}
                             </div>  
                         </div>
                     ))

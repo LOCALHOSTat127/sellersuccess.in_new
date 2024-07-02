@@ -57,6 +57,7 @@ const Reviews = () => {
   
   return (
     <section className="reviews">
+        <div className="wrapper">
         <div className="text_area">
             <h6>Listen what our clients have to say.</h6>
             <p>Testimonials don’t lie,This is what our past & current clients said about the services we offer.</p>
@@ -109,6 +110,7 @@ const Reviews = () => {
                     </div>
                 ))
             }
+        </div>
         </div>
     </section>
   )

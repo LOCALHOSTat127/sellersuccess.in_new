@@ -61,14 +61,14 @@ const GRID_CONFIG = {
 }
 
 
-const GirdBoxes = () => {
+const GirdBoxes = ({CONFIG}) => {
 
   return (
     <section className="grid_">
         <div className="wrapper">
             <div className="text_section">
-                        <h5>Compliance Required For Partnership Firm</h5>
-                        <p>There are plenty of compliance which are required to be fulfilled by an Partnership firm.</p>
+                        <h5>{CONFIG.head}</h5>
+                        <p>{CONFIG.sub_head}</p>
             </div>
             <div 
             style={{
@@ -79,14 +79,14 @@ const GirdBoxes = () => {
             }}
             className="grid_area">
                 {
-                      cards.map((card,index) => (
-                        <div className="card_">
+                      CONFIG.list.map((card,index) => (
+                        <div key={index} className="card_">
                             <div className="card_number">
                                 <img src={`${`/assets/svg/1_.svg`}`} alt="" srcset="" />
                             </div>
                            <div className="content">
-                           <h6>{card.head}</h6>
-                           <p>{card.desc}</p>
+                           <h6>{card.title}</h6>
+                           <p>{card.description}</p>
                            </div>
                         </div>
                     ))

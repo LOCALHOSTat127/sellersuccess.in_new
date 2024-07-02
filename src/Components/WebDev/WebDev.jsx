@@ -12,12 +12,12 @@ import ReactLogo from "../../../public/assets/Images/react_logo.png";
 
 const BulletPoints = ["E-commerce website","GYM Website","Custom business website","Static Website","Personal portfolio"]
 const Logos = [CloudLogo,MongoLogo,NodeLogo,CloudLogo,MongoLogo];
-const WebDev = () => {
+const WebDev = () => {  
   return (
     <section className="website_dev_service">
         <div className="wrapper">
         <h4 className="main_text">
-        Get a profession website design for <br/>you Business.
+        Get a profession website design.
         </h4>
         <div className="card_content">
             <div className="left">

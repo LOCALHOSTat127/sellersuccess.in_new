@@ -1,50 +1,77 @@
 @import '../color_n_typography';
 
-.about_us_points{
-    max-width: 1424px;
-    margin: 120px auto;
-    background-color: #f8f7fe;
-    border-radius: 16px;
-    padding: 14px;
-    display : grid;
-    grid-template-columns: repeat(4,1fr);
-    grid-template-rows: auto;
-    column-gap: 20px;
-    .point{
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 24px 18px;    
+
+.section_about{
+    margin: 120px 0px;
+    width: 100%;
+    // background-color: pink;
+    position: relative;
+  
+    .wapper{
         position: relative;
+        max-width: 1424px;
+        margin: 0px auto;
+        z-index: 50;
+        display: grid;
 
-        &::before{
-            position: absolute;
-            content: "";
-            right: 0;
-            top: 50%;
-            transform: translate(-50%,-50%);
-            width: 2px;
-            height: 70%;
-            border-radius: 8px;
-            background-color: rgb(189, 189, 189);
+        .about_us_points{
+            box-shadow: 0 2px 40px 0 rgba(0, 0, 0, .078);
+            border: 1px solid #2f80ed;
+            border-radius: 16px;
+            background-color: #f8f7fe;
+            padding: 14px;
+            display : grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,1fr);
+            column-gap: 30px;
+            .point{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 24px 18px;    
+                position: relative;
+        
 
-            
-        }
+                &::before{
+                    position: absolute;
+                    content: "";
+                    right: 0;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+                    width: 2px;
+                    height: 70%;
+                    border-radius: 8px;
+                    background-color: rgb(189, 189, 189);
+        
+                    
+                }
+        
+                &:last-child{
+                    &::before{
+                        display: none;
+                    }
+                }
 
-        &:last-child{
-            &::before{
-                display: none;
+                &:nth-child(2){
+                    &::before{
+                        display: none;
+                    }
+                }
+
+
+                // background-color: red;
+                .point_head{
+                    padding-bottom: 12px;
+                    font-size: 1.2rem;
+                    font-weight: $fw-bold;
+                }
+                .point_pera{
+                    line-height: normal;
+                    font-size: 1rem;
+                }
             }
         }
-        // background-color: red;
-        .point_head{
-            padding-bottom: 12px;
-            font-size: 1.2rem;
-            font-weight: $fw-bold;
-        }
-        .point_pera{
-            line-height: normal;
-            font-size: 1rem;
-        }
+
     }
+  
 }

@@ -1,10 +1,13 @@
 @import '../color_n_typography';
 
 .website_dev_service{
-    background-color: #282828;
     .wrapper{
+        background: rgb(2,0,36);
+        background: linear-gradient(356deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+        border-radius: 36px;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
         max-width: 1324px;
-        margin: 0px auto 120px auto;
+        margin: 200px auto 180px auto;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -12,12 +15,12 @@
         padding: 80px 140px 60px 140px;
         .main_text{
             font-weight: $fw-bold;
-            font-size: 2.8rem;
-            color: #dededee0;
+            font-size: 3.8rem;
+            color: white;
             text-align: center;
             text-transform: capitalize;
             line-height: normal;
-            padding-bottom: 64px;
+            padding-bottom: 74px;
         }
     
         .card_content{

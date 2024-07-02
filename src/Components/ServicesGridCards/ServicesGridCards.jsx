@@ -12,6 +12,7 @@ import ArrowBlue from "../../../public/assets/svg/arrow_right_blue_sm.svg";
 const ServicesGridCards = () => {
   return (
     <section className="services_grid">
+        <div className="wrapper">
         <div className="text_section">
             <h4>
             Services Tailored to Your Needs.
@@ -175,6 +176,9 @@ const ServicesGridCards = () => {
                
             </div>
         </div>
+
+        </div>
+      
     </section>
   )
 }

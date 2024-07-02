@@ -1,14 +1,14 @@
 "use client"
 import Image from 'next/image';
-import {useState,useRef} from 'react'
+
 import "../../Styles/Pages_Styles/module.contact.scss";
 
 import Icon1 from "../../../public/assets/svg/socialw1.svg";
 import Icon2 from "../../../public/assets/svg/socialw2.svg";
 import Icon3 from "../../../public/assets/svg/socialw3.svg";
-import Icon4 from "../../../public/assets/svg/socialw4.svg";
 
-import BgImg from "../../../public/assets/Images/bg_bul.png";
+
+
 
 const ContactUs = () => {
   return (
@@ -36,7 +36,7 @@ const ContactUs = () => {
               src={Icon3}
               />
               <Image
-              src={Icon4}
+            
               />
             </div>
           </div>

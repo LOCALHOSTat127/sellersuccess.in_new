@@ -18,33 +18,33 @@ const blogs = [
         date_published : "5 May 2024"
     },
     {
-        blog_title : "How to cancel gst registration?",
-        blog_img : "assets/Images/blog_image.png",
-        blog_description : "closing down you business. you should also get your gst registration cancelled.",
+        blog_title : "Mastering Python for Data Analytics: A Comprehensive Guide",
+        blog_img : "assets/Images/blog2.png",
+        blog_description : "Dive into the world of data analytics with Python. Learn essential libraries, tools, and techniques to turn raw data into actionable insights.",
         blog_link : "/",
         read_time : "6 minutes reading",
         date_published : "5 May 2024"
     },
     {
-        blog_title : "How to cancel gst registration?",
-        blog_img : "assets/Images/blog_image.png",
-        blog_description : "closing down you business. you should also get your gst registration cancelled.",
+        blog_title : "10 Must-Know Excel Tricks for Data Analysts",
+        blog_img : "assets/Images/blog3.png",
+        blog_description : "Discover powerful Excel tips and tricks that can save you time and boost your productivity in data analysis tasks.",
         blog_link : "/",
         read_time : "6 minutes reading",
         date_published : "5 May 2024"
     },
     {
-        blog_title : "How to cancel gst registration?",
-        blog_img : "assets/Images/blog_image.png",
-        blog_description : "closing down you business. you should also get your gst registration cancelled.",
+        blog_title : "From Beginner to Pro: A Journey Through Learning Math",
+        blog_img : "assets/Images/blog4.png",
+        blog_description : "Follow a detailed roadmap for mastering math, from fundamental concepts to advanced theories, with tips and resources for effective learning.",
         blog_link : "/",
         read_time : "6 minutes reading",
         date_published : "5 May 2024"
     },
     {
-        blog_title : "How to cancel gst registration?",
+        blog_title : "A Beginner's Guide to Redux in Next.js",
         blog_img : "assets/Images/blog_image.png",
-        blog_description : "closing down you business. you should also get your gst registration cancelled.",
+        blog_description : "Get started with Redux in your Next.js projects. Learn the basics of state management and how to integrate Redux into your app seamlessly.",
         blog_link : "/",
         read_time : "6 minutes reading",
         date_published : "5 May 2024"
@@ -75,10 +75,17 @@ const Blogs = () => {
         const walk = (x - startX)*1.5; // Adjust scroll speed for smooth natural scroll
         sliderRef.current.scrollLeft = scrollLeft - walk;
     };
-  
+    
+     const truncateText = (text, maxLength) => {
+        if (text.length <= maxLength) {
+          return text;
+        }
+        return text.substring(0, maxLength) + '...';
+      };
   
   return (
     <section className="blogs_section">
+        <div className="wrapper">
         <div className="text_n_filter">
            <div>
            <h6>blogs</h6>
@@ -97,7 +104,7 @@ const Blogs = () => {
             {
                 blogs.map((blog,index) => (
                     <div className="blog_card" key={index}>
-                <img src="assets/Images/blog_image.png" alt=""   className="blog_img" srcset="" />
+                <img src={blog.blog_img} alt=""  className="blog_img" srcset="" />
                 <div className="meta_info">
                     <span className="reading">
                         <Image
@@ -116,10 +123,15 @@ const Blogs = () => {
                 </div>
                 <div className="blog_meta">
                 <h3 className="blog_title">
-               {blog.blog_title}
+               {
+               truncateText(blog.blog_title,30)
+              }
                 </h3>
                 <p className="blog_description">
-                    {blog.blog_description}
+                    
+                    {
+                     truncateText(blog.blog_description,60)
+                    }
                 </p>
                 </div>
                 <p  className="read_more link">
@@ -128,6 +140,7 @@ const Blogs = () => {
             </div>
                 ))
             }
+        </div>
         </div>
     </section>
   )

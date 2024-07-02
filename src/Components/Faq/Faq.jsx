@@ -9,7 +9,7 @@ const GRID_CONFIG = {
     gap : 34
 }
 
-const Faq = ({faqs}) => {
+const Faq = ({CONFIG}) => {
 
     const handleOpenClose = (e) => {
         const left = document.getElementById("left_faqs").children;
@@ -34,7 +34,8 @@ const Faq = ({faqs}) => {
 
     return (
         <section className="faqs_section">
-            <div className="text_area">
+           <div className="wrapper">
+           <div className="text_area">
                 <h6>FAQs</h6>
                 <p>Get Answers to your most asked question.</p>
             </div>
@@ -49,7 +50,7 @@ const Faq = ({faqs}) => {
                 <div className="left faqs_list_outer"
                 id="left_faqs"
                 >
-                {faqs.left.map((faq, index) => (
+                {CONFIG.faqs.left.map((faq, index) => (
                     <div  
                         onClick={handleOpenClose}
                         key={index} className="faq"
@@ -66,7 +67,7 @@ const Faq = ({faqs}) => {
                 <div className="right faqs_list_outer"
                  id="right_faqs"
                 >
-                {faqs.right.map((faq, index) => (
+                {CONFIG.faqs.right.map((faq, index) => (
                     <div  
                         onClick={handleOpenClose}
                         key={index} className="faq"
@@ -81,6 +82,7 @@ const Faq = ({faqs}) => {
                 ))}
                 </div>
             </div>
+           </div>
         </section>
     )
 }

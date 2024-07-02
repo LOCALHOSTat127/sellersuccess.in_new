@@ -5,13 +5,13 @@
     align-items:center;
     justify-content: space-between;
     max-width: 1424px;
-    margin: 0px auto 120px auto;
+    margin: 120px auto 120px auto;
     gap: 120px;
     .text_section{
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap:18px;
+        gap:30px;
         h4{
             font-weight: $fw-bold;
             font-size: 3.2rem;
@@ -23,24 +23,26 @@
             text-align: center;
             max-width: 60%;
             line-height: normal;
+            color: #898989;
         }
     }
 
     .grid{
         .card{
             position: relative;
-            background-color: #FAFAFA;
+       
             display: flex;
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-between;
             gap: 10px;
             padding: 62px 24px 24px 24px;
-            border: 1px solid grey;
-            border-radius: 16px;
             transition: all 200ms ease-in-out;
-            // box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            background-color: #ffffff;
+            border: 1px solid rgba(128, 128, 128, 0.598);
+            border: 1px solid #2f80ed;
+            border-radius: 16px;
+          
             cursor: pointer;
             &:hover{
                 box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
@@ -54,7 +56,7 @@
             span{
                 .card_title{
                     font-weight: $fw-semibold;
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
                     padding-bottom: 20px;
                     line-height: 24px;
                 }            
