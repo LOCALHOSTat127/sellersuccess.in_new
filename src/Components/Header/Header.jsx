@@ -60,10 +60,10 @@ const Header = () => {
           <ul>
             {
               socialMediaIcons.map((icon,index) => (
-                <li >
+                <li  key={icon.className}>
                 <Image
                   priority
-                  key={index}
+              
                   src={icon.icon}
                   alt={icon.alt_tag}
                   className={`social__icon ${icon.className}`}

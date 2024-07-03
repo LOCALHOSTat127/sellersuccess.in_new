@@ -287,16 +287,16 @@ const MobileMenu = () => {
                           fontWeight: main_list.isBold === true ? 'bold' : 'regular', // Adjust the font weight based on the outer prop
                         },
                       }}
-                    key={index} itemId={main_list.id} label={main_list.head}>
+                    key={main_list.id} itemId={main_list.id} label={main_list.head}>
                         {
                             main_list.list.length > 0 ? 
                             main_list.list.map((single_list,index) =>(
                                 <CustomTreeItem
-                                 key={index} itemId={`id-${single_list}-${index}`} label={single_list} />
+                                 key={`id-${single_list}-${index}`} itemId={`id-${single_list}-${index}`} label={single_list} />
                             )):
                             main_list.sub_list.map((outer_main_list, sub_index) => (
                                 <CustomTreeItem 
-                                key={sub_index} itemId={outer_main_list.id} label={outer_main_list.subhead}>
+                                key={outer_main_list.id} itemId={outer_main_list.id} label={outer_main_list.subhead}>
                                     {
                                         outer_main_list.sub_items.map((itm, last_index) => (
                                             <CustomTreeItem key={last_index} itemId={`id-${itm}-${last_index}`} label={itm} />
@@ -341,6 +341,7 @@ const MobileMenu = () => {
                         }}
                     >
                         <Image
+                        alt='icon'
                         style={{
                             maxWidth : "120px",
                             height: "auto"
@@ -410,14 +411,12 @@ const MobileMenu = () => {
                 >
                     {
                         socialMediaIcons.map((icon,index) => (
-                            <li >
+                            <li key={`${icon.className}-${index}`} >
                                     <Image
                                     sx={{
                                         width: '17px',
                                         height: 'auto',
                                     }}
-                                    priority
-                                    key={index}
                                     src={icon.icon}
                                     alt={icon.alt_tag}
                                     className={`social__icon ${icon.className}`}

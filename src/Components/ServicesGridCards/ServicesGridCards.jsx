@@ -8,6 +8,7 @@ import IncomeTaxIcon from "../../../public/assets/Images/incometax_sm.png";
 import PayrollIcon from "../../../public/assets/Images/payroll_sm.png";
 import ArrowGold from "../../../public/assets/svg/arrow_right_gold.svg";
 import ArrowBlue from "../../../public/assets/svg/arrow_right_blue_sm.svg";
+import Link from "next/link";
 
 const ServicesGridCards = () => {
   return (
@@ -54,15 +55,17 @@ const ServicesGridCards = () => {
                 <p className="card_desc">
                 All-in-one cloud-based GST toolkit simplifies your GST return filing experience
                 </p>
-               
-                    <p className="link">
+                <Link href="/how-to-register-private-limited-company/?id=001">
+                <p className="link">
                     Learn more
                     <Image
                     className="sm_arrow"
                     src={ArrowBlue}
                     alt="learn more"
-                /> 
-                    </p>
+                     /> 
+                </p>
+                </Link>
+                  
           
             </div>
             <div className="card ser_2">
@@ -79,14 +82,16 @@ const ServicesGridCards = () => {
 
                 </p>
           
-                    <p className="link">
+                <Link href="/How-to-Fuck-even-when-you-have-a-short-penis/?id=002">
+                <p className="link">
                     Learn more
                     <Image
                     className="sm_arrow"
                     src={ArrowBlue}
                     alt="learn more"
-                /> 
-                    </p>
+                     /> 
+                </p>
+                </Link>
              
             </div>
             <div className="card ser_3">

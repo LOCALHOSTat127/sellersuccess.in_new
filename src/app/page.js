@@ -1,5 +1,4 @@
 import "../Styles/Pages_Styles/module.home.scss";
-
 import HeroSection from "@/Components/HeroSection/HeroSection";
 import AboutPoints from "@/Components/AboutPoints/AboutPoints";
 import ServicesGridCards from "@/Components/ServicesGridCards/ServicesGridCards";
@@ -9,6 +8,10 @@ import WebDev from "@/Components/WebDev/WebDev";
 import Blogs from "@/Components/Blogs/Blogs";
 import Faq from "@/Components/Faq/Faq";
 import Reviews from "@/Components/Reviews/Reviews";
+export const metadata = {
+  title: 'HOME PAGE',
+  description: 'This is my home page',
+}
 
 
 const TEXT_CONFIG = {
@@ -201,7 +204,9 @@ const CONFIG_2 = {
 
 export default function Home() {
   return (
-    <section className="home_page_main">
+    <>
+      
+      <section className="home_page_main">
       <HeroSection/>
       <AboutPoints/>
       <ServicesGridCards/>
@@ -212,6 +217,7 @@ export default function Home() {
       <Reviews/>
       <Blogs/>
       <Faq CONFIG={FAQS}/>
-    </section>
+      </section>
+    </>
   );
 }

@@ -4,9 +4,11 @@
     width: 100%;
    
     .wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
         max-width: 1224px;
-        gap: 20px;
-        margin: 120px auto 80px auto;
+        margin: 150px auto 80px auto;
     .text_section{
         display: flex;
         flex-direction: column;

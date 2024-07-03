@@ -1,5 +1,4 @@
 "use client"
-import { useState } from "react";
 import "../../Styles/Small_Modules/module.footer.scss";
 import Image from "next/image";
 
@@ -12,25 +11,29 @@ import IgIcon from "../../../public/assets/svg/instagram_svg.svg";
 import LiIcon from "../../../public/assets/svg/linkedin_svg.svg";
 import WbIcon from "../../../public/assets/svg/wb_blue.svg";
 import YtIcon from "../../../public/assets/svg/yt_svg.svg";
-import PhoneIcon from "../../../public/assets/svg/wb_blue.svg";
 
 
 
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
-import 'leaflet/dist/leaflet.css';
-import L from 'leaflet';
-// Fix for default marker icon issue
-import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
-import markerIcon from 'leaflet/dist/images/marker-icon.png';
-import markerShadow from 'leaflet/dist/images/marker-shadow.png';
+// import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
+// import 'leaflet/dist/leaflet.css';
+// import L from 'leaflet';
+// // Fix for default marker icon issue
+// import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png';
+// import markerIcon from 'leaflet/dist/images/marker-icon.png';
+// import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 
-L.Icon.Default.mergeOptions({
-    iconRetinaUrl: markerIcon2x,
-    iconUrl: markerIcon,
-    shadowUrl: markerShadow,
-  });
 
-const coords = [51.505, -0.09];
+// // const coords = [51.505, -0.09];
+// // // Merge leaflet options to fix marker icon issue
+// // if (typeof window !== "undefined") {
+// //     L.Icon.Default.mergeOptions({
+// //       iconRetinaUrl: markerIcon2x,
+// //       iconUrl: markerIcon,
+// //       shadowUrl: markerShadow,
+// //     });
+// //   }
+
+
 
 
 const Footer = () => {
@@ -113,7 +116,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className="third_floor">
-                    <MapContainer center={coords} zoom={33} style={{ height: "100%", width: "100%",maxWidth : "600px",borderRadius : "16px", border : "none",outline : "none" }}>
+                    {/* <MapContainer center={coords} zoom={33} style={{ height: "100%", width: "100%",maxWidth : "600px",borderRadius : "16px", border : "none",outline : "none" }}>
                         <TileLayer
                         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -123,7 +126,7 @@ const Footer = () => {
                             A pretty CSS3 popup. <br /> Easily customizable.
                         </Popup>
                         </Marker>
-                </MapContainer>
+                </MapContainer> */}
                     <div className="links_third_floor">
                     <div className="social_links links">
                         <p>LET’S CONNECT ONLINE</p>

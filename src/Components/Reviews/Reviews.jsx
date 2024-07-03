@@ -71,7 +71,9 @@ const Reviews = () => {
         className={`reviews_slider slider ${isDown && 'grabbing'}`}>
             {
                 REVIEWS.map((review,index) =>(
-                    <div className="review_card">
+                    <div 
+                    key={`${index}-${review.custmer_name}`}
+                    className="review_card">
                         <div className="img_name">
                             <img src={review.customer_img} alt={review.custmer_name}  className="review_image"/>
                             <p className="name">

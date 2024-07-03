@@ -25,6 +25,7 @@ const WebDev = () => {
                     {BulletPoints.map((point,index) =>(
                            <li key={index} className="point">
                            <Image
+                           alt="Tick Icon"
                            src={Tick}
                            />
                            <p>
