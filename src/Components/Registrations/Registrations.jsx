@@ -44,7 +44,7 @@ const Registrations = ({GC,CONFIG}) => {
                         </h3>
                         <p className="card_desc">
                             {
-                            truncateText(card.card_description,200)
+                            truncateText(card.card_description,250)
                             }
                         </p>
                     </span>

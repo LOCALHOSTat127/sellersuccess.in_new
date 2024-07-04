@@ -1,17 +1,15 @@
-import Image from "next/image";
-import "../../Styles/Small_Modules/module.herosection.scss";
+import '../../Styles/Small_Modules/module.herosection.scss';
+import Image from 'next/image';
 import CallIcon from "../../../public/assets/svg/phone_white.svg";
 import arrowDown from "../../../public/assets/svg/arrow_down_blue.svg";
-import HeroImage from "../../../public/assets/svg/hero_image.svg";
 import AlertDialog from "../DialogeBox/DiloagBox";
-
-const HeroSection = () => {
+const AboutPoints = () => {
   return (
-   <section className="herosection">
-    <AlertDialog/>
-       <div className="wrapper">
-       <div className="left">
-            <span className="heading">
+    <div className="hero_section_outer">
+        <div className="wapper">
+
+        <div className="hero_text">
+        <span className="heading">
             <h1>
             <span>Simplify your</span><br/> Taxation & <br/>Compliance.</h1>
             </span>
@@ -35,19 +33,18 @@ const HeroSection = () => {
                     />
                 </button>
             </div>
+              
+            </div>
+            <div className="hero_img">
 
+                    <img src="/assets/Images/n1.jpg"  alt='success image' />
+            </div>
           
         </div>
-        <div className="right">
-            <Image
-            id="heroImage"
-            alt="G"
-            src={HeroImage}
-            />
-        </div>
-       </div>
-   </section>
+      
+    
+    </div>
   )
 }
 
-export default HeroSection
+export default AboutPoints

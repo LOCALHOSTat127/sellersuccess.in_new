@@ -8,7 +8,7 @@
     justify-content: space-between;
     gap: 70px;
     max-width: 1424px;
-    margin: 150px auto 80px auto;
+    margin: 100px auto 80px auto;
 
     .text_section{
         display: flex;
@@ -18,10 +18,11 @@
         h4{
             font-weight: $fw-bold;
             font-size: 3.8rem;
-            color: rgb(77, 77, 77);
+            color: rgb(0, 0, 0);
         }
         p{
-            font-size: 1.2rem;
+            color: rgba(0, 0, 0, 0.735);
+            font-size: 1.1rem;
             text-align: center;
             max-width: 60%;
             line-height: normal;

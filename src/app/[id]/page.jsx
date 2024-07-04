@@ -14,7 +14,7 @@ import Reviews from "@/Components/Reviews/Reviews";
 import Blogs from "@/Components/Blogs/Blogs";
 import Pricing from "@/Components/DynamycPageComponents/Pricing";
 import NotFound from '../NotFound';
-import Head from 'next/head';
+
 
 export async function getPageData(pageID) {
   try {
@@ -69,6 +69,10 @@ const DynamicStaticPage = async ({searchParams}) => {
           {
             PAGE_DATA.settings.isnCol.state &&
             <GirdBoxes CONFIG={PAGE_DATA.settings.isnCol} />
+          }
+          {
+            PAGE_DATA.settings.isGridPints.state &&
+            <GridPoints CONFIG={PAGE_DATA.settings.isGridPints} />
           }
           {
             PAGE_DATA.settings.isDocuments.state &&

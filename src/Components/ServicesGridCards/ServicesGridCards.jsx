@@ -55,7 +55,7 @@ const ServicesGridCards = () => {
                 <p className="card_desc">
                 All-in-one cloud-based GST toolkit simplifies your GST return filing experience
                 </p>
-                <Link href="/how-to-register-private-limited-company/?id=001">
+                <Link href="/how-to-register-public-limited-company/?id=2024002">
                 <p className="link">
                     Learn more
                     <Image
@@ -82,7 +82,7 @@ const ServicesGridCards = () => {
 
                 </p>
           
-                <Link href="/How-to-Fuck-even-when-you-have-a-short-penis/?id=002">
+                <Link href="/What-is-one-person-company./?id=2024005">
                 <p className="link">
                     Learn more
                     <Image
@@ -107,14 +107,16 @@ const ServicesGridCards = () => {
                 </p>
           
             
-                    <p className="link">
+                <Link href="/how-to-register-public-limited-company/?id=2024006">
+                <p className="link">
                     Learn more
                     <Image
                     className="sm_arrow"
                     src={ArrowBlue}
                     alt="learn more"
-                /> 
-                    </p>
+                     /> 
+                </p>
+                </Link>
              
             </div>
             <div className="card ser_4">
@@ -127,15 +129,16 @@ const ServicesGridCards = () => {
                 <p className="card_desc">
                 Simplify income tax return, accurate filing, maximize deductions, minimize liabilities.
                 </p>
-             
-                    <p className="link">
+                <Link href="/how-to-register-private-limited-company/?id=2024004">
+                <p className="link">
                     Learn more
                     <Image
                     className="sm_arrow"
                     src={ArrowBlue}
                     alt="learn more"
-                /> 
-                    </p>
+                     /> 
+                </p>
+                </Link>
               
             </div>
             <div className="card ser_5">

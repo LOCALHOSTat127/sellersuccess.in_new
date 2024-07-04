@@ -1,47 +1,59 @@
 @import '../color_n_typography';
 
-.herosection{
-    // background-color: red;
-    width: 100%;
-  
-    .wrapper{
-        padding: 80px 10px 10px 10px;
+
+
+
+.hero_section_outer{
+    padding: 0px 0px;
+    .wapper{
+        overflow: hidden;
+        min-height: 900px;
+        max-height: 900px;
+        max-width: 2000px;
+        margin: 0px auto;
+
         display: grid;
-        grid-template-columns: 1fr  1fr;
+        grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr;
-        max-width: 1424px;
-        margin: auto auto;
-      
-        .left{
-            border-radius: 16px;
+
+
+        .hero_text{
+            position: relative;
+            padding: 0px 60px 0px 120px;
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-end;
-            row-gap: 40px;
-    
-    
+            justify-content: center;
+            gap: 44px;
+            background-image: url("../../../public/assets/Images/txtur3.jpg");
+            &::before{
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: linear-gradient(to top, rgba(17, 17, 17, 0.982), rgb(0 0 0 / 35%));
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: contain;
+            }
+
             .heading{
+                z-index: 5;
                 display: flex;
                 flex-direction: column;
                 gap: 24px;
-                font-size: 5.2rem;
+                font-size: 6.2rem;
                 h1{
-                    color: rgb(77 77 77);
+                    color: rgb(255, 255, 255);
                     font-weight: $fw-bold;
                     width: 100%;
                     text-transform: capitalize;
-                    line-height:9.8svb;
-    
-                    span{
-                        
-                    }
+                    line-height:10.8svb;
                 }
-            
-         
-        
                 .subheading {
-                    color: rgb(77 77 77);
+                    z-index: 5;
+                    color: rgba(255, 255, 255, 0.667);
                     font-weight: $fw-regular;
                     font-size: 1.7rem;
                     width: 100%;
@@ -54,72 +66,71 @@
             }
         
             .pera{
+                z-index: 5;
                 padding-top: 20px;
-                color: rgb(77 77 77);
+                color: rgba(255, 255, 255, 0.734);
                 max-width: 700px;
                 line-height: 28px;
                 font-weight: 300;
                 font-size: 1.1rem;
             }
-        
-    
-    
-    
-    
-    
-    
+
             .call_to_actions{
-             
+                z-index: 5;
                 display: flex;
                 align-items: center;
-                gap: 22px;
+                gap: 28px;
                 .cta_btn{
                     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-                    background-color: #403CF6;
+                 
+                    background-color: #565656;
                     color: white;
-                    border-radius: 8px;
-                    padding: 14px 18px;
+                    border-radius: 5px;
+                    border: 1px solid white;
+                    padding: 21px 28px;
                     text-transform: uppercase;
-                    font-weight: $fw-semibold;
+                    font-weight: 600;
                     border: none;
                     outline: none;
                     font-size: 0.95rem;
                     cursor: pointer;
-                    letter-spacing: 1.2px;
+                    letter-spacing: 1px;
                     display: flex;
                     align-items: center;
-                    gap: 8px;
+                    gap: 18px;
                     .sm_icon{
-                        width: 18px;
+                        width: 22px;
                         height: auto;
                     }
-                    
+                    transition: all 100ms ease-in-out;
+                    &:hover{
+                        background-color: #3e3e3eb5;
+                    }
+                    &:active{
+                        transform: scale(0.90);
+                    }
                 }
                 .nonfill{
                     background-color: white;
                     border: 1px solid #403CF6;
                     color: #403CF6;
+                    &:hover{
+                        color: white;
+                    }
                 }
             }
         }
-    
-    
-    
-        .right{
-       
-            border-radius: 16px 16px 16px 16px;
-            position: relative;
+
+        .hero_img{
             width: 100%;
             height: 100%;
-            #heroImage{
-                position: absolute;
-                height: auto;
+            background-color: rgb(23, 0, 128);
+            img{
                 width: 100%;
-                max-width: 600px;
-                bottom: 0;
-                right: 0;
+                height: 100%;
+                object-fit: cover;
+               
             }
         }
     }
-   
 }

@@ -1,8 +1,10 @@
 import '../../Styles/Small_Modules/module.about_points.scss';
+
 const AboutPoints = () => {
   return (
     <div className="section_about">
         <div className="wapper">
+                      
         <div className='about_us_points'>
             <div className="point">
                 <p className="point_head">
@@ -36,10 +38,8 @@ const AboutPoints = () => {
                     Tailored financial strategies to meet the unique needs of both businesses and individuals.
                     </p>
             </div>
-        </div>
-        </div>
-      
-    
+            </div>
+        </div>    
     </div>
   )
 }
