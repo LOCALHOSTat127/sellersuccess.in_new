@@ -67,6 +67,9 @@
         // Dynamic content HTML (Server Generated)
         .dynamic_html_fluyed{
             margin-top: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
             .paragraph{
                 line-height: normal;
                 font-weight: 300;
@@ -85,6 +88,7 @@
                     padding-left: 0px;
                 }
                 p{
+                    line-height: normal;
                     padding-left: 20px;
                 }
             }

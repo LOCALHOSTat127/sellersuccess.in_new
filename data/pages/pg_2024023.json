@@ -1,0 +1,130 @@
+{
+    "mata_info": {
+        "title": "SSI MSME Registration",
+        "description" : "SSI (Small Scale Industries) registration, which was previously used in India, has been replaced by MSME (Micro, Small, and Medium Enterprises) registration. Here’s all you need to know about MSME registration:",
+        "read_time" : "6 minutes reading",
+        "date_publish" : "5 May 2024",
+        "page_img": "/assets/Images/llp.png"
+    },
+     "content": "",
+    "settings": {
+        "isTwoCol": {
+            "state": false,
+            "content": {
+              "left_col": {
+                "head": "Advantages",
+                "list": [
+                    {
+                      "title": "",
+                      "description": ""
+                    }
+                  ]
+              },
+              "right_col": {
+                "head": "Disadvantages",
+                "list": [
+                    {
+                        "title": "",
+                        "description": ""
+                    }
+                  ]
+              }
+            }        
+        },
+        "isnCol": {
+            "state": true,
+            "head": "",
+            "sub_head": "",
+            "list": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        "isGridPints": {
+            "state": true,
+            "isBG": true,
+            "head": "",
+            "sub_head": "Points to make your decision easy",
+            "list": [
+              {
+                "index": 1,
+                "head": "",
+                "subhead": ""
+              }
+            ]
+        },
+        "isDocuments": {
+            "state": true,
+            "list": [
+                
+    
+            ]
+        },
+        "isSteps": {
+            "state": true,
+            "list": [
+                {
+                    "step": "STEP 1",
+                    "title": "",
+                    "description": ""
+                },
+                {
+                    "step": "STEP 2",
+                    "title": "",
+                    "description": ""
+                },
+                {
+                    "step": "STEP 3",
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        "isPricing": {
+            "state": true,
+            "features": [
+              {
+                  "type" : "Essential",
+                  "list" : [
+  
+                  ]
+              },
+              {
+                  "type" : "Enhanced",
+                  "list" : [
+  
+                  ]
+              },
+              {
+                  "type" : "Ultimate",
+                  "list" : [
+  
+                  ]
+              }
+            ]
+        },
+        "isFAQ": {
+            "state": true,
+            "faqs": {
+                "left": [
+                    {
+                        "question": "",
+                        "answer": ""
+                    }
+                   
+                ],
+                "right": [
+                    {
+                        "question": "",
+                        "answer": ""
+                    }
+                ]
+            }
+        },
+        "isBlogs": true,
+        "isReviews": true
+    }
+  }
+  

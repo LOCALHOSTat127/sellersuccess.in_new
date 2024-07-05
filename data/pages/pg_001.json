@@ -85,7 +85,24 @@
       "isPricing": {
           "state": true,
           "features": [
-              
+            {
+                "type" : "Essential",
+                "list" : [
+
+                ]
+            },
+            {
+                "type" : "Enhanced",
+                "list" : [
+
+                ]
+            },
+            {
+                "type" : "Ultimate",
+                "list" : [
+
+                ]
+            }
           ]
       },
       "isFAQ": {
