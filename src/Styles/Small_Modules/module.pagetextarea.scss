@@ -69,7 +69,56 @@
             margin-top: 30px;
             display: flex;
             flex-direction: column;
-            gap: 14px;
+            gap: 24px;
+
+            .table_container{
+                margin: 20px 0px;
+                display: flex;
+                flex-direction: column;
+                gap: 12px;
+                .tab_head{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                    h2{
+                        font-size: 1.5rem;
+                        font-weight: 600;
+                        color: black;
+                        line-height: normal;
+                    }  
+                    p{
+                        color: rgba(0, 0, 0, 0.595);
+                        font-size: 0.90rem;
+                        line-height: normal;
+                    } 
+
+                }
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                  }
+                  th, td {
+                    border: 1px solid black;
+                    padding: 20px;
+                    text-align: left;
+                  }
+                  th {
+                    background-color: #f2f2f2;
+                  }
+                  tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                  }
+                  tr:hover {
+                    background-color: #ddd;
+                  }
+                  tr {
+                    padding: 20px;
+                    cursor: pointer;
+                  }
+
+            }
+
+
             .paragraph{
                 line-height: normal;
                 font-weight: 300;

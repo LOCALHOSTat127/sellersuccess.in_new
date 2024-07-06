@@ -127,3 +127,92 @@
       "isReviews": true
   }
 }
+
+
+
+{
+    "mata_info": {
+        "title": "What is ROC Annual Filing for Private Limited Company?",
+        "description" : "Every company registered in India, including private limited, limited company, one person company and section 8 company must file annual returns with ROC every year. It requires conducting of an Annual General Meeting and filing annual accounts with ROC. AGM must be held within 6 months from the end of the financial year i.e. 30th September every year. In case of new companies, first AGM should be held within 18 months from the date of incorporation or 9 months from the close of financial year whichever is earlier. Companies Act 2013 mandates that your financial year should start from 1st April and end on 31st March.",
+        "read_time" : "6 minutes reading",
+        "date_publish" : "5 May 2024",
+        "page_img": "/assets/Images/llp.png"
+    },
+     "content": "",
+    "settings": {
+        "isTwoCol": {
+            "state": false,
+            "content": ""  
+        },
+        "isnCol": {
+            "state": true,
+            "head": "",
+            "sub_head": "",
+            "list": [
+                {
+                    "title": "",
+                    "description": ""
+                }
+            ]
+        },
+        "isGridPints": {
+            "state": false,
+            "isBG": true,
+            "head": "",
+            "sub_head": "",
+            "list": []
+        },
+        "isDocuments": {
+            "state": false,
+            "list": []
+        },
+        "isSteps": {
+            "state": false,
+            "list": []
+        },
+        "isPricing": {
+            "state": true,
+            "features": [
+              {
+                  "type" : "Essential",
+                  "list" : [
+  
+                  ]
+              },
+              {
+                  "type" : "Enhanced",
+                  "list" : [
+  
+                  ]
+              },
+              {
+                  "type" : "Ultimate",
+                  "list" : [
+  
+                  ]
+              }
+            ]
+        },
+        "isFAQ": {
+            "state": true,
+            "faqs": {
+                "left": [
+                    {
+                        "question": "",
+                        "answer": ""
+                    }
+                   
+                ],
+                "right": [
+                    {
+                        "question": "",
+                        "answer": ""
+                    }
+                ]
+            }
+        },
+        "isBlogs": true,
+        "isReviews": true
+    }
+  }
+  
