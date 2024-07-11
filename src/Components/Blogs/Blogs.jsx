@@ -1,146 +1,91 @@
-"use client"
-import { useState,useRef } from "react";
+import Link from "next/link";
 import "../../Styles/Small_Modules/module.blogs.scss";
-import Image from "next/image";
-import ClockIcon from "../../../public/assets/svg/calender_sm_grey.svg";
-import  DateIcon from "../../../public/assets/svg/clock_sm_grey.svg";
+import { FetchRecentBlogsCards_ } from "../../../lib/cms_api";
 
 
 
 
-const blogs = [
-    {
-        blog_title : "How to cancel gst registration?",
-        blog_img : "assets/Images/blog_image.png",
-        blog_description : "closing down you business. you should also get your gst registration cancelled.",
-        blog_link : "/",
-        read_time : "6 minutes reading",
-        date_published : "5 May 2024"
-    },
-    {
-        blog_title : "Mastering Python for Data Analytics: A Comprehensive Guide",
-        blog_img : "assets/Images/blog2.png",
-        blog_description : "Dive into the world of data analytics with Python. Learn essential libraries, tools, and techniques to turn raw data into actionable insights.",
-        blog_link : "/",
-        read_time : "6 minutes reading",
-        date_published : "5 May 2024"
-    },
-    {
-        blog_title : "10 Must-Know Excel Tricks for Data Analysts",
-        blog_img : "assets/Images/blog3.png",
-        blog_description : "Discover powerful Excel tips and tricks that can save you time and boost your productivity in data analysis tasks.",
-        blog_link : "/",
-        read_time : "6 minutes reading",
-        date_published : "5 May 2024"
-    },
-    {
-        blog_title : "From Beginner to Pro: A Journey Through Learning Math",
-        blog_img : "assets/Images/blog4.png",
-        blog_description : "Follow a detailed roadmap for mastering math, from fundamental concepts to advanced theories, with tips and resources for effective learning.",
-        blog_link : "/",
-        read_time : "6 minutes reading",
-        date_published : "5 May 2024"
-    },
-    {
-        blog_title : "A Beginner's Guide to Redux in Next.js",
-        blog_img : "assets/Images/blog_image.png",
-        blog_description : "Get started with Redux in your Next.js projects. Learn the basics of state management and how to integrate Redux into your app seamlessly.",
-        blog_link : "/",
-        read_time : "6 minutes reading",
-        date_published : "5 May 2024"
+
+
+
+const Blogs = async() => {
+
+  const truncateText = (text, maxLength) => {
+    if (text.length <= maxLength) {
+      return text;
     }
-]
+    return text.substring(0, maxLength) + '...';
+  };
 
-
-const Blogs = () => {
-    const sliderRef = useRef(null);
-    const [isDown, setIsDown] = useState(false);
-    const [startX, setStartX] = useState(0);
-    const [scrollLeft, setScrollLeft] = useState(0);
-  
-    const handleMouseDown = (e) => {
-      setIsDown(true);
-      setStartX(e.pageX - sliderRef.current.offsetLeft);
-      setScrollLeft(sliderRef.current.scrollLeft);
-    };
-  
-    const handleMouseLeaveOrUp = (e) => {
-        setIsDown(false);
-    };
-  
-    const handleMouseMove = (e) => {
-        if (!isDown) return;
-        e.preventDefault();
-        const x = e.pageX - sliderRef.current.offsetLeft;
-        const walk = (x - startX)*1.5; // Adjust scroll speed for smooth natural scroll
-        sliderRef.current.scrollLeft = scrollLeft - walk;
-    };
+      const cards_ = await FetchRecentBlogsCards_();
     
-     const truncateText = (text, maxLength) => {
-        if (text.length <= maxLength) {
-          return text;
-        }
-        return text.substring(0, maxLength) + '...';
-      };
   
   return (
     <section className="blogs_section">
         <div className="wrapper">
-        <div className="text_n_filter">
-           <div>
-           <h6>blogs</h6>
-           <p>Explore our concise yet insightful articles covering taxation, accounting, and business compliance. Stay informed, optimize your tax strategy, and ensure compliance with ease.</p>
-           </div>
-
-           <button id="filterBlogs">Featured Blogs </button>
+        <div className="text_area">
+        <h6>blogs - Recent Articles</h6>
+        <p>Explore our concise yet insightful articles covering taxation, accounting, and business compliance.</p>
         </div>
+        <>
+    {
+        cards_?.cards &&
+
         <div 
-              ref={sliderRef}
-              onMouseDown={handleMouseDown}
-              onMouseLeave={handleMouseLeaveOrUp}
-              onMouseUp={handleMouseLeaveOrUp}
-              onMouseMove={handleMouseMove}
-        className={`blogs_slider slider ${isDown && 'grabbing'}`}>
-            {
-                blogs.map((blog,index) => (
-                    <div className="blog_card" key={index}>
-                <img src={blog.blog_img} alt=""  className="blog_img" srcset="" />
-                <div className="meta_info">
-                    <span className="reading">
-                        <Image
-                            alt="reading time"
-                            src={ClockIcon}
-                        />
-                        <p>{blog.read_time}</p>
-                    </span>
-                    <span className="date">
-                    <Image
-                            alt="Publish date"
-                            src={DateIcon}
-                        />
-                        <p>{blog.date_published}</p>
-                    </span>
+        className={`blogs_slider slider`}>
+    {
+        cards_.cards.map((blog,index) => (
+            <Link href={`/blog/${blog.seo.slug}/?id=${blog.id}`}>
+            <div 
+            key={index}
+            className="blog_card">
+                <div className="img_">
+                <img
+                src={blog.img.url}
+                alt={blog.img.name} 
+                className="blog_img" 
+                />
                 </div>
-                <div className="blog_meta">
+            
+            <div className="info_">
+
+                <span className="tags">
+                {blog.category}
+                </span>
+            <div className="blog_meta">
                 <h3 className="blog_title">
-               {
-               truncateText(blog.blog_title,30)
-              }
+                    {truncateText(blog.title, 60)}
                 </h3>
                 <p className="blog_description">
-                    
-                    {
-                     truncateText(blog.blog_description,60)
-                    }
+                    {truncateText(blog.description, 120)}
                 </p>
                 </div>
-                <p  className="read_more link">
-                    Read More
-                </p>
+
+                <div className="meta_info">
+                <div className="author">
+                    <div className="auther_img">
+                    <img
+                    alt={blog.auther.name}
+                    src={blog.auther.profile}
+                    />
+                    </div>
+                    <span>
+                    <p className="author_name">{blog.auther.name}</p>
+                    <p className="readingtime">
+                    {blog.date}
+                    </p>
+                    </span>
+                </div>
+                </div>
             </div>
-                ))
-            }
-        </div>
+            </div>
+            </Link>
+        ))
+    }
+    </div>
+    }
+
+  </>
         </div>
     </section>
   )
