@@ -2,3 +2,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.skleten{
+    opacity: 0.7;
+    animation: skleten-loading 1s linear infinite alternate;
+}
+
+.skleten-text{
+    width: 100%;
+    min-height: 1rem;
+    border-radius: 9px;
+
+    &.last{
+        width: 80%;
+    }
+
+    &.title{
+        min-height: 2rem;
+    }
+}
+
+@keyframes skleten-loading {
+    0% {
+        background-color: hsl(198, 24%, 39%);
+    }
+    100% {
+        background-color: hsl(0, 0%, 100%);
+    }
+}
